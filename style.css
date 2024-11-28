@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: blue;
+    font-family: helvetica;
+}
+input{
+    background-color: rgba(255, 255, 255, 0);
+}
+.main{
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+    form{
+        box-shadow: 0 0 10px grey;
+        height: 80%;
+        width: 38%;
+        background-color: rgba(255, 255, 255, 0.67);
+        justify-items: center;
+        padding: 1rem;
+        div{
+            justify-items: center;
+        }
+        .line{
+            margin: 0.5rem;
+            width: 100%;
+            border: 1px solid blue;
+        }
+        .detail{
+            margin-bottom: 1rem;
+        }
+        .details{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 1rem;
+            .left{
+                justify-items: right;
+                width: 40%;
+                gap: 3rem;
+                p{
+                    margin: 1rem 0;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+            }
+            .choice{
+                margin: 1rem 0;
+                font-size: 0.9rem;
+            }
+            .name{
+                display: flex;
+                gap: 0.5rem;
+                input{
+                    border: 0;
+                    height: 2rem;
+                    border-bottom: 1px solid blue;
+                    width: 9rem;
+                }
+                label{
+                    font-size: 0.7rem;
+                }
+            }
+            .phone{
+                margin: 1rem 0;
+                justify-self: left;
+                input{
+                    border: 0;
+                    height: 2rem;
+                    border-bottom: 1px solid blue;
+                    width: 18.5rem;
+                }
+            }
+            textarea{
+                border: 0;
+                border-bottom: 1px solid blue;
+                background-color: rgba(255, 255, 255, 0);
+                margin-top: 3rem;
+            }
+        }
+        button{
+            margin-top: 3rem;
+            width: 6rem;
+            height: 2rem;
+            background-color: blue;
+            color: white;
+            font-weight: 600;
+            border: 0;
+            border-radius: 0.2rem;
+        }
+    }
+}
